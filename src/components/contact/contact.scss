@@ -1,0 +1,154 @@
+@import "../../global.scss";
+
+.container{
+    display: grid;
+
+.contact{
+  display: flex;
+  background-color: #fffafa;
+
+  .left{
+    flex: 2;
+    overflow: hidden;
+    padding: 30px 30px;
+
+    iframe{
+      height: 100%;
+      flex:1 1 45rem;
+      width: 100%;
+      object-fit: cover;
+
+    }
+  }
+
+  .right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fffafa;
+
+    h1{
+      text-transform: uppercase;
+      font-size: 50px;
+      padding: 15px;
+      color: black;
+      font-weight: 900;
+    }
+
+    .card{
+      width: 350px;
+      height: 62%;
+      border-radius: 10px;
+      box-shadow: 0px 0px 15px -8px black;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: rgb(245, 179, 155);
+      overflow: hidden;
+
+
+    form{
+      flex:1 1 45rem;
+      padding:1rem 2rem;
+      text-align: center;
+      overflow: hidden;
+
+      .inputBox{
+      display: flex;
+      align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+
+        .icon{
+          color: $light;
+          font-size: 2rem;
+          padding-left: 2rem 2rem;
+        }
+
+        .icons{
+          color: $light;
+          font-size: 2rem;
+          padding-bottom: 11.5rem;
+        }
+
+
+      input{
+        width: 300px;
+        padding: .1rem;
+        font-size: 1rem;
+        text-transform: none;
+        background-color: #f5f5f5;
+        border: $border;
+        outline: none;
+        border-radius: 5px;
+
+      }
+
+      .text{
+          background-color: #f5f5f5;
+          border-radius: 5px;
+
+      textarea{
+        background-color: #f5f5f5;
+        width: 300px;
+        height: 200px;
+        font-size: 1rem;
+        text-transform: none;
+        border: $border;
+        outline: none;
+      }
+    }
+  }
+
+        .button{
+        display: inline-block;
+        cursor: pointer;
+
+          .buttonClass{
+            background-color: #f5f5f5;
+            color: rgb(245, 179, 155);
+
+              h3{
+                font-size: 15px;
+                padding-top: 3px;
+              }
+
+              .icon{
+                margin-left: 5px;
+                font-size: 1.5rem;
+              }
+
+            &:hover{
+              background-color: black;
+              color: #f5f5f5;
+              transition: all .3s ease;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+  .footer {
+    padding: 5px;
+
+      .credit{
+        text-align: center;
+        justify-content: center;
+
+         h1{
+           font-size: 1rem;
+           color: #fff;
+           font-weight: 300;
+
+          span{
+            color: black;
+          }
+        }
+      }
+    }
+  }
